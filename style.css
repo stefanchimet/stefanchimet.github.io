@@ -49,6 +49,10 @@ body {
   background: var(--bg);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -379,6 +383,216 @@ a:focus-visible {
   vertical-align: middle;
 }
 
+/* ---------- Building now (roadmap) ---------- */
+.roadmap-card {
+  padding: 1.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.roadmap-card + .roadmap-card {
+  margin-top: 1.5rem;
+}
+
+.roadmap-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+}
+
+.roadmap-name {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.roadmap-started {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.roadmap-summary {
+  margin: 0.35rem 0 0.75rem;
+  color: var(--muted);
+}
+
+.roadmap-progress {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.progress-label {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.progress-label strong {
+  color: var(--text);
+}
+
+.progress-track {
+  height: 8px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0;
+  height: 100%;
+  background: var(--accent);
+  border-radius: inherit;
+  transition: width 0.8s ease-out;
+}
+
+.milestones {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.milestone {
+  display: flex;
+  gap: 0.85rem;
+  padding: 0.7rem 0.75rem;
+  border-radius: 8px;
+}
+
+.milestone + .milestone {
+  margin-top: 0.25rem;
+}
+
+.milestone-marker {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: 0.1rem;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.milestone-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.milestone-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.6rem;
+}
+
+.milestone-title {
+  font-weight: 600;
+}
+
+.milestone-date {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.milestone-criteria,
+.milestone-note {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.milestone-note {
+  color: var(--text);
+}
+
+.milestone-image {
+  display: inline-block;
+  margin-top: 0.6rem;
+}
+
+.milestone-image img {
+  display: block;
+  max-width: min(100%, 360px);
+  max-height: 220px;
+  width: auto;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* Completed */
+.milestone-done .milestone-marker {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+/* Up next */
+.milestone-next {
+  background: var(--tag-bg);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.milestone-next .milestone-marker {
+  border-color: var(--accent);
+}
+
+.badge-next {
+  margin-left: 0;
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+/* Not started */
+.milestone-todo {
+  opacity: 0.55;
+}
+
+.roadmap-upnext {
+  margin: 1.25rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.roadmap-upnext strong {
+  color: var(--text);
+}
+
+.roadmap-error {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-fill {
+    transition: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
 /* ---------- Education ---------- */
 .edu-card {
   padding: 1.25rem 1.5rem;
@@ -461,10 +675,31 @@ a:focus-visible {
 
   .nav-inner {
     justify-content: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
   }
 
   .nav-links {
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 0.875rem;
+  }
+
+  .roadmap-card {
+    padding: 1.1rem;
+  }
+
+  .milestone {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .milestone-date {
+    margin-left: 0;
+    width: 100%;
   }
 
   .hero {

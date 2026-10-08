@@ -12,6 +12,7 @@
     <div class="container nav-inner">
       <a class="nav-brand" href="#top">Stefan Chimet</a>
       <ul class="nav-links">
+        <li id="nav-building" hidden><a href="#building">Building</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
@@ -33,6 +34,15 @@
   </header>
 
   <main>
+    <!-- ==================== BUILDING NOW ==================== -->
+    <!-- Filled in by roadmap.js from roadmap.json. Stays hidden if nothing has status "building". -->
+    <section id="building" class="section section-alt" hidden>
+      <div class="container">
+        <h2 class="section-title">Building now</h2>
+        <div id="building-content" aria-live="polite"></div>
+      </div>
+    </section>
+
     <!-- ==================== PROJECTS ==================== -->
     <section id="projects" class="section">
       <div class="container">
@@ -255,5 +265,7 @@
       <p class="footer-copy">&copy; 2026 Stefan Chimet</p>
     </div>
   </footer>
+
+  <script src="roadmap.js" defer></script>
 </body>
 </html>

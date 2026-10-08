@@ -1,0 +1,86 @@
+{
+  "projects": [
+    {
+      "id": "stm32-devboard",
+      "name": "STM32 Dev Board",
+      "status": "building",
+      "summary": "[ONE-LINE DESCRIPTION]",
+      "started": "2026-10-08",
+      "tags": ["STM32", "Altium", "PCB design", "Embedded C"],
+      "milestones": [
+        {
+          "title": "Define requirements",
+          "doneWhen": "MCU picked, feature list written (USB, power input, headers, debug)",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        },
+        {
+          "title": "Schematic",
+          "doneWhen": "Full schematic in Altium, passes ERC",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        },
+        {
+          "title": "Design review",
+          "doneWhen": "Reviewed by a teammate from WARG/WATonomous",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        },
+        {
+          "title": "Layout",
+          "doneWhen": "Routed, passes DRC, 3D view checked",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        },
+        {
+          "title": "Order",
+          "doneWhen": "Gerbers and BOM sent to the fab",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        },
+        {
+          "title": "Assembly",
+          "doneWhen": "Board populated",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        },
+        {
+          "title": "Bring-up",
+          "doneWhen": "Powers on, programs over SWD, LED blinks",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        },
+        {
+          "title": "Firmware demo",
+          "doneWhen": "One real peripheral working (UART, I2C sensor, etc.)",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        },
+        {
+          "title": "Write-up",
+          "doneWhen": "Project page on the site with photos",
+          "target": "[YYYY-MM-DD]",
+          "completed": null,
+          "note": "",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
