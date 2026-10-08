@@ -3,14 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stefan | Electrical Engineering</title>
+  <meta name="description" content="Stefan Chimet — Electrical Engineering student at the University of Waterloo working on embedded systems, robotics, and PCB design.">
+  <title>Stefan Chimet | Electrical Engineering</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Stefan</h1>
-  <p>Electrical Engineering @ University of Waterloo — embedded systems, robotics, PCB design.</p>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="#top">Stefan Chimet</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <h2>Projects</h2>
-  <h3>Self-Positioning Basketball Hoop</h3>
-  <p>Computer vision tracking with real-time stepper motor control.</p>
+  <header id="top" class="hero">
+    <div class="container">
+      <h1 class="hero-name">Stefan Chimet</h1>
+      <p class="hero-tagline">Electrical Engineering @ University of Waterloo — embedded systems, robotics, PCB design</p>
+      <div class="button-row">
+        <a class="button button-primary" href="https://github.com/stefanchimet" target="_blank" rel="noopener">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/stefan-chimet" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button" href="mailto:stefanchimet@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <!--
+          To add a project: copy one <article class="card">, change the slug in
+          "Read more" (projects/<slug>.html), and drop media into assets/.
+          Media slot: replace the placeholder <div> with
+            <img src="assets/<slug>.jpg" alt="...">  or
+            <video src="assets/<slug>.mp4" autoplay muted loop playsinline></video>
+        -->
+        <div class="project-grid">
+          <article class="card">
+            <div class="card-media">
+              <div class="media-placeholder" aria-hidden="true">
+                <span class="media-icon">&#9654;</span>
+                <span>Video coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Self-Positioning Basketball Hoop</h3>
+              <p class="card-desc">A 2-axis hoop that tracks a shot with computer vision and moves to catch it in real time.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>OpenCV</li>
+                <li>Kalman filter</li>
+                <li>Raspberry Pi</li>
+                <li>Stepper motors</li>
+                <li>Fusion 360</li>
+              </ul>
+              <div class="card-links">
+                <a href="projects/basketball-hoop.html">Read more <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <div class="media-placeholder" aria-hidden="true">
+                <span>Image coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Hand Gesture Recognition Glove</h3>
+              <p class="card-desc">A wearable glove that reads hand gestures with flex sensors and controls devices wirelessly.</p>
+              <ul class="tags">
+                <li>Arduino</li>
+                <li>ESP32</li>
+                <li>Flex sensors</li>
+                <li>Soldering</li>
+              </ul>
+              <div class="card-links">
+                <a href="projects/gesture-glove.html">Read more <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <div class="media-placeholder" aria-hidden="true">
+                <span>Image coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Python File Management Tool</h3>
+              <p class="card-desc">A cross-platform CLI that sorts files by type and removes duplicates using MD5 hashing.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>pathlib</li>
+                <li>argparse</li>
+                <li>MD5 hashing</li>
+              </ul>
+              <div class="card-links">
+                <a href="projects/file-management-tool.html">Read more <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <!-- ---------- Work ---------- -->
+        <h3 class="subsection-title">Work</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-header">
+              <h4 class="timeline-role">[ROLE TITLE] <span class="badge">Incoming</span></h4>
+              <span class="timeline-dates">[START] – [END]</span>
+            </div>
+            <p class="timeline-org">Toronto Transit Commission (TTC)</p>
+            <ul class="timeline-points">
+              <li>[BULLET 1]</li>
+              <li>[BULLET 2]</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-header">
+              <h4 class="timeline-role">Metrology &amp; Software Engineering Intern</h4>
+              <span class="timeline-dates">Jan – Apr 2026</span>
+            </div>
+            <p class="timeline-org">DSQ Metrology · Concord, ON</p>
+            <ul class="timeline-points">
+              <li>Inspected parts to ±0.005 mm on a CMM using GD&amp;T, qualifying components for clients including Nissan and Boston Scientific.</li>
+              <li>Built and launched the company website with SEO improvements, contributing to a 20% increase in customer inquiries.</li>
+              <li>Wrote a Python tool that parses PDFs and scrapes the web to find suppliers, cutting about 2 hours of research to 3 minutes.</li>
+            </ul>
+            <ul class="tags">
+              <li>CMM</li>
+              <li>GD&amp;T</li>
+              <li>Python</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-header">
+              <h4 class="timeline-role">Manufacturing Engineering Intern (Part-Time)</h4>
+              <span class="timeline-dates">Jan – Apr 2026</span>
+            </div>
+            <p class="timeline-org">Maxel Manufacturing · Concord, ON</p>
+            <ul class="timeline-points">
+              <li>Ran quality control on 10+ work orders a month for clients including Tesla and Entegra.</li>
+              <li>Set machining parameters on CNC machines and CAM software for tight-tolerance parts, learning DFM first-hand.</li>
+            </ul>
+            <ul class="tags">
+              <li>CNC</li>
+              <li>CAM</li>
+              <li>Quality control</li>
+              <li>DFM</li>
+            </ul>
+          </li>
+        </ol>
+
+        <!-- ---------- Design Teams ---------- -->
+        <h3 class="subsection-title">Design Teams</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-header">
+              <h4 class="timeline-role">Electrical Team Member</h4>
+              <span class="timeline-dates">Sep 2026 – Present</span>
+            </div>
+            <p class="timeline-org">WATonomous (Humanoid)</p>
+            <ul class="timeline-points">
+              <li>[PLACEHOLDER] Designing the CAN bus network architecture for the humanoid robot.</li>
+              <li>[PLACEHOLDER] Leading the team on wiring and topology for long CAN lines.</li>
+            </ul>
+            <ul class="tags">
+              <li>[PLACEHOLDER] CAN bus</li>
+              <li>[PLACEHOLDER] Wiring harness</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-header">
+              <h4 class="timeline-role">Electrical Subsystem Member</h4>
+              <span class="timeline-dates">Sep 2025 – Present</span>
+            </div>
+            <p class="timeline-org">Waterloo Aerial Robotics Group (WARG)</p>
+            <ul class="timeline-points">
+              <li>Designed a drone power regulation PCB (5 V to 3.3 V LDO, decoupling, status LEDs) in Altium, from schematic to layout.</li>
+              <li>Tested and debugged drone electronics across subsystems, catching a fault before board integration.</li>
+            </ul>
+            <ul class="tags">
+              <li>Altium Designer</li>
+              <li>PCB design</li>
+              <li>Debugging</li>
+            </ul>
+          </li>
+        </ol>
+
+        <!-- ---------- Other ---------- -->
+        <h3 class="subsection-title">Other</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-header">
+              <h4 class="timeline-role">Lifeguard</h4>
+              <span class="timeline-dates">[DATES]</span>
+            </div>
+            <p class="timeline-org">City of Toronto</p>
+            <p class="timeline-summary">Supervised public aquatic facilities; National Lifeguard and Standard First Aid/CPR-C certified.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-card">
+          <div class="edu-main">
+            <div>
+              <h3 class="edu-school">University of Waterloo</h3>
+              <p class="edu-degree">BASc, Electrical Engineering (Co-op)</p>
+            </div>
+            <span class="edu-dates">Sep 2025 – Present</span>
+          </div>
+          <p class="edu-extra"><strong>External training:</strong> Harvard CS50P, Harvard CS50AI</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CONTACT ==================== -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <p class="footer-cta">Open to co-op opportunities.</p>
+      <ul class="footer-links">
+        <li><a href="mailto:stefanchimet@gmail.com">stefanchimet@gmail.com</a></li>
+        <li><a href="https://github.com/stefanchimet" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/stefan-chimet" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Stefan Chimet</p>
+    </div>
+  </footer>
 </body>
 </html>
